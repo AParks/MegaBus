@@ -1,241 +1,146 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<h1>megabus Planner </h1>
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+</head>
 
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
+<body>
+	Want the cheap prices of <a href="http://us.megabus.com/">MegaBus</a>, 
+	but tired of it's limitations? 
+	 <div class='container'>
+		<form class="form-horizontal">		
+			<div class= "control-group"> 
+				<label class="control-label" for="numPass">Number of Passengers:</label>
+				<div class = "controls">
+					<input type="text" id="numpass" />
+				</div>
+			</div>
+			
+			<div class= "control-group"> 
+				<label class="control-label" for="leaveFrom">Leaving from:</label>
+				<div class = "controls">
+					<action="">
+						<select name="cities">
+						<option value="89">Albany, NY</option>
+						<option value="90">Amherst, MA</option>
+						<option value="91">Ann Arbor, MI</option>
+						<option value="302">Athens, GA</option>
+						<option value="289">Atlanta, GA</option>
+						<option value="320">Austin, TX</option>
+						<option value="143">Baltimore, MD</option>
+						<option value="93">Binghamton, NY</option>
+						<option value="292">Birmingham, AL</option>
+						<option value="94">Boston, MA</option>
+						<option value="273">Buffalo Airport, NY</option>
+						<option value="95">Buffalo, NY</option>
+						<option value="96">Burlington, VT</option>
+						<option value="98">Champaign, IL</option>
+						<option value="99">Charlotte, NC</option>
+						<option value="290">Chattanooga, TN</option>
+						<option value="100">Chicago, IL</option>
+						<option value="101">Christiansburg, VA</option>
+						<option value="102">Cincinnati, OH</option>
+						<option value="103">Cleveland, OH</option>
+						<option value="104">Columbia, MO</option>
+						<option value="105">Columbus, OH</option>
+						<option value="317">Dallas/Fort Worth, TX</option>
+						<option value="106">Des Moines, IA</option>
+						<option value="107">Detroit, MI</option>
+						<option value="131">Durham, NC</option>
+						<option value="330">East Lansing, MI</option>
+						<option value="316">Fairhaven, MA</option>
+						<option value="109">Frederick, MD</option>
+						<option value="296">Gainesville, FL</option>
+						<option value="331">Grand Rapids, MI</option>
+						<option value="110">Hampton, VA</option>
+						<option value="111">Harrisburg, PA</option>
+						<option value="112">Hartford, CT</option>
+						<option value="318">Houston, TX</option>
+						<option value="114">Hyannis, MA</option>
+						<option value="115">Indianapolis, IN</option>
+						<option value="116">Iowa City, IA</option>
+						<option value="295">Jacksonville, FL</option>
+						<option value="117">Kansas City, MO</option>
+						<option value="118">Knoxville, TN</option>
+						<option value="324">Little Rock, AR</option>
+						<option value="298">Louisville, KY</option>
+						<option value="300">Madison, U of Wisc, WI</option>
+						<option value="119">Madison, WI</option>
+						<option value="120">Memphis, TN</option>
+						<option value="121">Milwaukee, WI</option>
+						<option value="144">Minneapolis, MN</option>
+						<option value="294">Mobile, AL</option>
+						<option value="293">Montgomery, AL</option>
+						<option value="299">Morgantown, WV</option>
+						<option value="291">Nashville , TN</option>
+						<option value="305">New Brunswick, NJ</option>
+						<option value="122">New Haven, CT</option>
+						<option value="303">New Orleans, LA</option>
+						<option value="123">New York, NY</option>
+						<option value="389">Newark, DE</option>
+						<option value="322">Norman, OK</option>
+						<option value="323">Oklahoma City, OK</option>
+						<option value="126">Omaha, NE</option>
+						<option value="297">Orlando, FL</option>
+						<option value="127">Philadelphia, PA</option>
+						<option value="128">Pittsburgh, PA</option>
+						<option value="129">Portland, ME</option>
+						<option value="304">Princeton, NJ</option>
+						<option value="130">Providence, RI</option>
+						<option value="132">Richmond, VA</option>
+						<option value="133">Ridgewood, NJ</option>
+						<option value="134">Rochester, NY</option>
+						<option value="321">San Antonio, TX</option>
+						<option value="301">Saratoga Springs, NY</option>
+						<option value="135">Secaucus, NJ</option>
+						<option value="136">St Louis, MO</option>
+						<option value="137">State College, PA</option>
+						<option value="138">Storrs, CT</option>
+						<option value="139">Syracuse, NY</option>
+						<option value="140">Toledo, OH</option>
+						<option value="145">Toronto, ON</option>
+						<option value="142">Washington, DC</option>
 
 
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
-</html>
+					</select>
+				</div>
+			</div>
+	
+			<div class= "control-group"> 
+				<label class="control-label" for="leaveFrom">Traveling to:</label>
+				<div class = "controls">
+				<action="">
+					<select name="cities">
+						<option value="philly">Select</option>
+						<option value="philly">Philadelphia, PA</option>
+						<option value="ny">New York, NY</option>
+						<option value="pitts">Pittsburgh,PA</option>
+						<option value="statecollege">State College, PA</option>
+					</select>
+				</div>
+			</div>
+			
+			
+			<div class= "control-group"> 
+				<label class="control-label" for="outDate">Outbound date:</label>
+				<div class = "controls">
+					<input type="text" id="f"  />
+					<a class="btn" href="#"><i class="icon-calender"></i></a>
+				</div>
+			</div>
+			
+			<div class= "control-group"> 
+				<label class="control-label" for="backDate">Return date: </label>
+				<div class = "controls">
+					<input type="text" id="f" />
+					<a class="btn" href="img/glyphicons-halflings.png"><i class="icon-calender"></i></a>
+				</div>
+			</div>
+			
+					
+			<input type="submit" value="Search" />
+		</form>
+	</div>
+</body>

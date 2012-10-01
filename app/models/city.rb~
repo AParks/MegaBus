@@ -2,7 +2,7 @@ class City < Neo4j::Rails::Model
   property :name, :type => String
   property :address, :type => String
 
-#define a one-way relationship to any other node of type City
+#define a one-way relationship to any other node
   has_n :destinations
 
 end

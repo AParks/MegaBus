@@ -1,4 +1,6 @@
 NeoBlog::Application.routes.draw do
+  resources :destinations
+
   resources :cities
 
   # The priority is based upon order of creation:
